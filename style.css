@@ -113,7 +113,7 @@ a {
 }
 
 .content {
-    background-color: lightgray;
+    background-color: #eee;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
@@ -140,13 +140,13 @@ a {
     border-radius: 8px;
     padding: 30px 15px;
     display: grid;
+    grid-template-rows: auto auto;
 }
 
 .title {
     color: #444;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 0.25rem;
 }
 
 .text {
@@ -155,8 +155,9 @@ a {
 
 .options {
     font-size: 24px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
     gap: 1rem;
     justify-content: end;
+    align-self: end;
 }
