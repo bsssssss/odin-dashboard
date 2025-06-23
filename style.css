@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 ul {
     display: flex;
     gap: 1rem;
@@ -69,15 +74,40 @@ a {
 }
 
 .status {
+    display: flex;
     font-size: 20px;
     justify-self: end;
+    align-items: center;
+    gap: 30px;
 }
 
-.profile #greeting_message {
+.status .iconify {
+    font-size: 18px;
+}
+
+.profile_picture {
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.status .profile_picture {
+    height: 40px;
+    width: 40px;
+}
+
+.header .profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .profile #greeting_message {
     font-size: 14px;
 }
 
-.profile #profile_name {
+.header .profile #profile_name {
     font-size: 24px;
 }
 
@@ -116,11 +146,11 @@ a {
     background-color: #eee;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
+    grid-template-rows: 1fr;
+    /* gap: 0 10px; */
 }
 
 .content>div {
-    border: 1px solid black;
     padding: 10px;
 }
 
@@ -131,22 +161,43 @@ a {
 .cards {
     display: grid;
     grid-template: 1fr / repeat(2, minmax(200px, 1fr));
-    gap: 30px;
-    padding: 10px 0;
+    gap: 20px;
+    /* justify-content: space-around; */
 }
 
-.cards>div {
+.card {
     background-color: white;
     border-radius: 8px;
-    padding: 30px 15px;
-    display: grid;
-    grid-template-rows: auto auto;
+    padding: 50px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informations .card {
+    padding: 20px;
+}
+
+.announcements section {
+    padding: 0 10px;
+}
+
+.separator {
+    height: 2px;
+    border-bottom: 1px solid lightgrey;
+    margin: 20px 0;
 }
 
 .title {
     color: #444;
     font-weight: bold;
-    font-size: 20px;
+    /* font-size: 18px; */
 }
 
 .text {
@@ -155,9 +206,19 @@ a {
 
 .options {
     font-size: 24px;
-    /* margin-top: 30px; */
     display: flex;
     gap: 1rem;
     justify-content: end;
     align-self: end;
+}
+
+.trending .profile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.trends {
+    display: grid;
+    gap: 20px;
 }

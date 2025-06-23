@@ -16,11 +16,16 @@
           <input type="text" class="search-bar" />
         </div>
         <div class="status">
+          <span class="iconify" data-icon="mdi-bell-ring-outline"></span>
+          <div class="profile_picture"></div>
           <span>Bss</span>
         </div>
         <div class="profile">
-          <p id="greeting_message">Oh hello,</p>
-          <p id="profile_name">Bss</p>
+          <div class="profile_picture"></div>
+          <div>
+            <p id="greeting_message">Oh hello,</p>
+            <p id="profile_name">Bss</p>
+          </div>
         </div>
         <div class="nav">
           <ul>
@@ -52,7 +57,7 @@
         <div class="projects">
           <h3>Your Projects</h3>
           <div class="cards">
-            <div>
+            <div class="card project">
               <section>
                 <p class="title">A Project Title !</p>
                 <p class="text">
@@ -67,7 +72,36 @@
                 <span class="iconify" data-icon="mdi-source-branch"></span>
               </section>
             </div>
-            <div>
+            <div class="card project">
+              <section>
+                <p class="title">Another Project Title !</p>
+                <p class="text">
+                  Cum perferendis rerum qui eveniet doloremque et facere odit
+                  eum
+                </p>
+              </section>
+              <section class="options">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-branch"></span>
+              </section>
+            </div>
+            <div class="card project">
+              <section>
+                <p class="title">A Project Title !</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam eget facilisis sapien. Cras interdum posuere ex in
+                  bibendum. Duis ut.
+                </p>
+              </section>
+              <section class="options">
+                <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                <span class="iconify" data-icon="mdi-source-branch"></span>
+              </section>
+            </div>
+            <div class="card project">
               <section>
                 <p class="title">Another Project Title !</p>
                 <p class="text">
@@ -83,11 +117,59 @@
             </div>
           </div>
         </div>
-        <div class="announcements">
-          <h3>Announcements</h3>
-        </div>
-        <div class="trending">
-          <h3>Trending</h3>
+        <div class="informations">
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <div class="card announcements">
+              <div>
+                <p class="title">Maintenance</p>
+                <p class="text">Very soon !</p>
+              </div>
+              <div class="separator"></div>
+              <div>
+                <p class="title">Another important thing</p>
+                <p class="text">You're beautiful</p>
+              </div>
+              <div class="separator"></div>
+              <div>
+                <p class="title">Oh no !</p>
+                <p class="text">This site actually does nothing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="trending">
+            <h3>Trending</h3>
+            <div class="card trends">
+              <div class="profile">
+                <div>Image</div>
+                <div>
+                  <div>@a_name</div>
+                  <div>A description</div>
+                </div>
+              </div>
+              <div class="profile">
+                <div>Image</div>
+                <div>
+                  <div>@another_name</div>
+                  <div>Another description</div>
+                </div>
+              </div>
+              <div class="profile">
+                <div>Image</div>
+                <div>
+                  <div>@third</div>
+                  <div>Third description</div>
+                </div>
+              </div>
+              <div class="profile">
+                <div>Image</div>
+                <div>
+                  <div>@4th</div>
+                  <div>4th description</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
